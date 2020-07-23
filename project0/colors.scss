@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto+Condensed|Ubuntu&display=swap');
+body{
+	background-color: $bg;
+	color: $cl;
+	padding: $size;
+    font-family: 'lato';
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00e8e8; 
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  li {
+    display: inline-block;
+    float: left;
+    border-right: 1px solid #bbb;
+    cursor: pointer;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+input[class=styling] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: $bg2;
+    color: white;
+}
+textarea{
+	resize:none;
+}
+#header {
+   background-image: url(pakistan.jpg);
+    background-attachment: fixed;
+    padding-top:15%;
+    padding-bottom:13%;
+    text-align:center;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+
+.style-button{
+   flex: 3 4 100px;
+    background: purple;
+    width: 100px;
+    height: 30px;
+    -webkit-transition:all 1s ease;
+}
+
+#footer {
+    background-color:$cl;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}

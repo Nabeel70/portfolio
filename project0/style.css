@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+ 
+*
+{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+@media screen and(min-width: 768px){
+  #container{
+    max-height: 450px;
+    overflow: hidden;
+  }
+}
+body{
+	background-image: url(laptop.jpg);
+  background-size: cover;
+	font-size: 93.75%;
+	color: #555555;
+}
+img:hover{
+  width: 500px;
+  height: 400px;
+  transition: 0.5s height, width;
+}
+.bold{
+	font-weight: 700;
+	font-size: 125%;
+	text-transform: uppercase;
+}
+.semi_bold{
+	font-weight: 500;
+	font-size: 16px;
+}
+.Resume{
+	width: 600px;
+	height: auto;
+	display: flex;
+    margin: 50px auto;
+}
+.Resume .Resume_left{
+	width: 400px;
+	background: #0cb5f6;
+}
+.Resume .Resume_left .Resume_profile{
+	width: 100%;
+	height: 280px;
+}
+.Resume .Resume_left .Resume_content{
+	padding: 0 25px;
+}
+ .Resume .title{
+ 	margin-bottom: 20px; 
+ }
+  .Resume .Resume_left .bold{
+  	color: #fff;
+  }
+  .Resume .Resume_left .regular{
+  	color: #b1eaff;
+  }
+   .Resume .Resume_item{
+   	padding: 25px 0;
+   	border-bottom: 2px solid #b1eaff;
+   }
+   .Resume .Resume_left .Resume_item:last-child,
+   .Resume .Resume_right .Resume_item:last-child{
+   	border-bottom: 0px;
+   }
+    .Resume .Resume_left ul li{
+     display: flex;
+     align-items: center;
+     margin-bottom: 10px;
+    }
+  .Resume .Resume_left ul li:last-child{
+  	margin-bottom:0; 
+  }
+    .Resume .Resume_left ul li.icon{
+   	width: 35px;
+   	height: 35px; 
+   	background: #fff;
+   	color: #0bb5f4;
+   	border-radius: 50%;
+   	margin-right: 15px;
+   	font-size: 16px;
+   	position: relative;
+   } 
+   
+   .Resume .icon i,
+   .Resume .Resume_right .Resume_hobby ul li i{
+   	color: #b1eaff;
+   	position: flex;
+   	top: 50%;
+   	left:50%; 
+   	transform: translate(-50%,50%);
+   }
+ .Resume .Resume_left ul li .data{
+   color: #b1eaff;	
+ }
+  .Resume .Resume_left .Resume_skills ul li{
+  	color: #b1eaff;
+  	justify-content: space-between 50%;
+  }
+  .Resume .Resume_left .Resume_skills ul li .skills_name{
+  	width: 25%;
+  }
+  .Resume .Resume_left .Resume_skills ul li  .skills_progress{
+  	 width: 50%;
+  	 margin: 0 30px;
+     height: 5px;
+     background: #009fd9;
+     position: relative;
+  }
+  .Resume .Resume_left .Resume_skills ul li  .skills_percentage{
+  	width: 15%;
+  }
+  .Resume .Resume_left .Resume_skills ul li  .skills_progress span{
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	background: black;
+  }
+  .Resume .Resume_right{
+ 	width: 600px;
+  	background: #fff;
+  	padding: 25px;
+  }
+  .Resume .Resume_right .bold{
+  	color: #0bb5f4; 
+  }
+  .Resume .Resume_right ul li .date{
+  	font-size: 16px;
+  	font-weight: 500;
+  	margin-bottom: 35px;
+  }
+
+  .Resume .Resume_right.Resume_work ul li : before,
+  .Resume .Resume_right .Rume_education ul: before{
+  	content: "";
+  	position: absolute;
+  	top: 5px;
+  	left: -25px;
+  	width: 6px;
+  	height: 6px;
+  	border-radius: 50%;
+  	border:2px solid #0bb5f4;
+  }
+  .Resume .Resume_right.Resume_work ul li : after,
+  .Resume .Resume_right .Rume_education ul: after{
+    content: "";
+  	position: absolute;
+  	top: 14px;
+  	left: -21px;
+  	width: 2px;
+  	height: 115px;
+  	background: #0bb5f4;
+  }
+  .Resume .Resume_right .Resume_hobby ul{
+  	display: flex;
+  	justify-content: space-between;
+  }
+  .Resume .Resume_right .Resume_hobby ul li{
+  	width: 80px;
+  	height: 80px;
+  	border:2px solid #0bb5f4;
+  	border-radius: 50%;
+  	position: relative;
+  	color: #0bb5f4;
+    padding: 10px;
+  }
+  .Resume .Resume_right .Resume_hobby ul li i{
+  	 font-size: 50px;
+  }
+  .Resume .Resume_right .Resume_hobby ul li: before{
+    content: "";
+  	position: absolute;
+  	top: 40;
+  	right:-52;
+  	width: 50px;
+  	height: 2px;
+  	background: #0bb5f4;	
+  }
+  .Resume_profile{
+    padding: 7px;
+  }
+
+/*Style for Hoverable side bar*/
+#mySidenav a {
+  flex: 3 4 100px;
+  display: flex;
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 120px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555;
+}

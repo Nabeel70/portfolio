@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html Forms</title>
+
+	<style> 
+input[class=styling] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+}
+</style>
+
+</head>
+<body style="background-image: url(laptop.jpg);">
+<form>
+
+	<div>
+		<h2 style="color: blue; font-size: 220%; text-align: center;">Your Feedback</h2>
+
+		<label style="font-size: 150%">Email</label>
+
+	<input class="styling" type="text" name="name" placeholder="Email"><br><br>
+
+	<label for="fname">Password</label>
+
+	<input class="styling" type="password" name="paassword" placeholder="Password">
+	<br><br>
+
+	</div>
+	      <div>
+	      	Your Feedback in percentage
+	      	<input type="radio" name="color" value="red"> 20%
+	      	<input type="radio" name="color" value="green"> 40%
+	      	<input type="radio" name="color" value="blue">60%
+	      	<input type="radio" name="color" value="blue">70%
+	      	<input type="radio" name="color" value="blue">80%
+	      	<input type="radio" name="color" value="other">100%
+	      </div>
+	      <div><br><br>
+	      	<label>Your Country Name</label>
+	      	<input class="styling" name="country" list="countries" placeholder="Country">
+	      	<datalist id="countries">
+	      	  <option value="Pakistan">
+	      		<option value="Afghanistan">
+	      			<option value="United State of America">
+	      				<option value="Algeria">
+	      					<option value="Barazil">
+	      					 <option value="Bangladesh">
+                              <option value="Canada">
+                              	<option value="China"> 
+                              	 <option value="Finland">
+                              	  <option value="France">
+                              	  	<option value="England">
+                              	  	 <option value="Russia">
+	      	</datalist>
+	      </div>
+
+	<br><br><center><button>Submit!</button></center>
+</form>
+</body>
+</html>
